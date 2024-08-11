@@ -1,0 +1,257 @@
+        /* CSS RESET */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+        /* CONTAİNER */
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+}
+
+        /* CARD İMAGES */
+
+.card_img_section {
+    background-image: url(../img/cra_img_section_background.png);
+    width: 375px;
+    height: 240px;
+    position: relative;
+}
+
+.card_front {
+    background-image: url(../img/card1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 286px;
+    height: 157px;
+    position: absolute;
+    left: 16px;
+    top: 126px;
+    z-index: 1;
+}
+
+.card_back {
+    background-image: url(../img/card2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 286px;
+    height: 157px;
+    position: absolute;
+    right: 16px;
+    top: 32px;
+}
+
+.card_front h2 {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.97px;
+    letter-spacing: 2.200000047683716px;
+    text-align: left;
+    margin: 84px 25px 17px 19px;
+    width: 379px;
+    min-height: 36px;
+}
+
+.card_front h3 {
+    color: #FFFFFF;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 11.48px;
+    letter-spacing: 1.2857142686843872px;
+    text-align: left;
+}
+
+.card_info_texts {
+    width: 245px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 19px;
+}
+
+.card_back h3 {
+    color: #FFFFFF;
+    width: 25px;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 11.48px;
+    letter-spacing: 1.2857142686843872px;
+    text-align: right;
+    margin-top: 73px;
+    margin-left: 228px;
+}
+
+        /* CARD İNFORMATİON */
+
+.card_information {
+    width: 327px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 91px 24px 45px 24px;
+}
+
+.card_information h2 {
+    color: #21092F;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.31px;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-bottom: 9px;
+}
+
+.card_information input {
+    width: 327px;
+    height: 45px;
+    border: 1px solid #DFDEE0;
+    border-radius: 8px;
+}
+
+.card_information input::placeholder {
+    color: #d8d7d8;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.97px;
+    text-align: left;
+    padding-left: 16px;
+}
+
+.inputs {
+    margin-bottom: 20px;
+}
+
+.card_information .mm {
+    width: 72px;
+    margin-right: 8px;
+}
+
+.card_information .yy {
+    width: 72px;
+    margin-right: 11px;
+}
+
+.card_information .cvc {
+    width: 164px;
+}
+
+.inputs input:focus {
+    outline: none;
+    border:1px solid #21092F;
+
+}
+
+.card_information button {
+    background-color: #21092F;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.97px;
+    text-align: left;
+    padding: 15px 129px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.errorcss {
+    width: 72px;
+}
+
+.working  {
+    background-color: red;
+}
+
+        /* DESKTOP */
+
+@media (width >= 1440px) {
+
+    .container {
+        width: 1440px;
+        display: flex;
+    }
+
+    .card_img_section {
+        width: 483px;
+        height: 900px;
+    }
+    
+    .card_front {
+        width: 447px;
+        height: 245px;
+        top: 187px;
+        left: 164px;
+    }
+    
+    .card_back {
+        width: 447px;
+        height: 245px;
+        top: 469px;
+        left: 258px;
+    }
+
+    .card_information {
+        width: 381px;
+        height: 352px;
+        margin-top: 275px;
+        margin-left: 349px;
+    }
+
+    .card_front h2 {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 35.73px;
+        letter-spacing: 3.422222137451172px;
+        text-align: left;
+        margin: 139px 39px 25px 32px;
+    }
+
+    .card_front h3 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17.86px;
+        letter-spacing: 2px;
+        text-align: left;
+    }
+    
+    .card_info_texts {
+        width: 383px;
+        margin-left: 32px;
+    }
+
+    .card_back h3 {
+        width: 35px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17.86px;
+        letter-spacing: 2px;
+        text-align: right;
+        margin: 111px 0px 0px 358px;
+    }
+    
+}

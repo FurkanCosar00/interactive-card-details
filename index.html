@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asssets/css/card_details.css">
+    <script src="./asssets/js/card_details.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card_img_section">
+
+            <div class="card_front">
+                <h2 class="card_number_text">0000 0000 0000 0000</h2>
+
+                <div class="card_info_texts">
+                    <h3 class="cardholder_name_text">JANE APPLESEED</h3>
+                    <h3><span class="mm_text">00</span>/<span class="yy_text">00</span></h3>
+                </div>
+            </div>
+
+            <div class="card_back">
+                <h3 class="cvc_text">000</h3>
+            </div>
+
+        </div>
+        <div class="card_information">
+
+            <div class="inputs">
+                <h2>CARDHOLDER NAME</h2>
+                <input class="cardholder_name" type="text" placeholder="e.g. Jane Appleseed">
+                <h2 class="cardholder_error"></h2>
+            </div>
+
+            <div class="inputs">
+                <h2>CARD NUMBER</h2>
+                <input class="card_number" type="text" placeholder="e.g. 1234 5678 9123 0000">
+                <h2 class="card_number_error"></h2>
+            </div>
+
+            <div class="inputs">
+                <h2>EXP. DATE</h2>
+                <input class="mm" type="number" placeholder="MM">
+                <h2 class="mm_error"></h2>
+            </div>
+
+            <div class="inputs">
+                <h2>(MM/YY)</h2>
+                <input class="yy" type="number" placeholder="YY">
+                <h2 class="yy_error"></h2>
+            </div>
+
+            <div class="inputs">
+                <h2>CVC</h2>
+                <input class="cvc" type="number" placeholder="e.g. 123">
+                <h2 class="cvc_error"></h2>
+            </div>
+
+            <button class="submit_button">Confirm</button>
+        </div>
+    </div>
+</body>
+</html>
